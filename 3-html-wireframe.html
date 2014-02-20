@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-        <title>Exercise 3: HTML wireframe</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="A basic HTML layout styles with CSS.">
-        <meta name="keywords" content="HTML,CSS,layout,wireframe,mmc3260">
-        <meta name="author" content="Dave Stanton">
-        <link rel="stylesheet" type="text/css" href="css/layout.css">
-    </head>
-
-    <body>
-
-        <header>
-            <h1>HTML wireframe layout</h1>
-        </header>
-
-        <nav>
-            <a href="1-html-quick-fix.html">HTML quick fix</a>
-            <a href="2-html-links-and-images.html">HTML links and images</a>
-            <a href="#footer">Copyright</a>
-        </nav>
-
-        <article>
-
-            <section>
-                <h2>About Me</h2>
-                <p>My name is Christina Hunt and I am a second year Journalism major, Business minor at the University of Florida.</p>
-            </section>
-
-            <aside>
-                <h2>My Blog</h2>
-                <p>You can find my blog at christinamhunt.wordpress.com.
-            </aside>
-
-        </article>
-
-        <footer>
-            <p id="copyright">&copy; 2013. Content in your projects should be all original. Any content from additional sources should explicitly state the source and give credit. The GIFs used in these exercises were found on <a href="http://giphy.com/">Giphy</a>. If these exercises were intended for public viewing, I should track down the actually copyright owner for all of the images I used.</p>
-        </footer>        
-
-    </body>
-
-</html>
+<html lang="en">
+<head><!--Begin Head -->
+	<meta charset="utf-8" />
+	<title>Christina Hunt Journalist </title>
+         <h1>Christina Hunt Journalist</h1>
+	</head>
+<!--End Head -->
+<!--Begin Body -->
+<body>
+	<header> <!--Will create header in CSS -->
+	</header>
+	
+	<div id="background"> 
+	</div><!--Closes Background image div -->
+	
+	<div id="wrapper">
+	<aside>
+	<nav role="navigation">	
+		<ul class="nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bio.html">Biography</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="resume.html">Résumé</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	</aside>
+		
+	<article> <!--width will be 90% and will be on white background and then have patterned background behind that which will cover entire page behind it-->
+	<div id="CompositePicture"> <!--Seperate div is to make the caption line up with the bottom of the photo -->
+	<figure class="left">
+		<img src="img/profilepicture.jpg" width="320" height="320" alt="Profile Picture Christina Hunt" title="Profile Picture Christina Hunt" />
+		<figcaption> Caption for my photo?</figcaption>
+	</figure>
+	</div><!--close profile picture div -->
+	<section><!--To get content to right of photo -->
+	<h1>Subheadline Goes Here (quote?)</h1>
+	<p>I am a student at the <a href="http://www.ufl.edu" target="_blank">University of Florida</a> majoring in <a href="http://www.jou.ufl.edu" target="_blank">Journalism</a> and minoring in Business. After graduation I hope to work in the communications department of a company or to manage a publication.</p>
+	</section>
+	</article>
+<footer>
+	<nav role=”navigation”>
+		<a href=”index.html”>Home</a>
+		<a href=”bio.html”>Biography</a>
+		<a href=”blog.html”>Blog</a>
+		<a href=”portfolio.html”>Portfolio</a>
+		<a href=”resume.html”>Résumé</a>
+		<a href=”contact.html”>Contact</a>
+		<a class=”footerclear” href=”mailto:christinamhunt@ufl.edu”>Email Me</a>
+		<p>Site maintained by Christina Hunt
+		<br>Last updated Feb. 2014
+		<br>&copy; Copyright 2014</p>
+		</nav>
+	</footer>
